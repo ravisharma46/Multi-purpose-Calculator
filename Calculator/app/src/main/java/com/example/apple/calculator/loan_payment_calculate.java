@@ -43,7 +43,7 @@ public class loan_payment_calculate extends AppCompatActivity {
         String y= year.getText().toString().trim();
 
         if((a.isEmpty() || a.equals("."))||( r.isEmpty() || r.equals("."))|| (y.isEmpty() || y.equals("."))){
-            Toast.makeText(loan_payment_calculate.this,"Enter number",Toast.LENGTH_SHORT).show();
+            Toast.makeText(loan_payment_calculate.this," Please enter number",Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -54,8 +54,13 @@ public class loan_payment_calculate extends AppCompatActivity {
         double ye_r= Double.parseDouble(y);
         int x=1;
 
-        if(ye_r>=50 || ye_r<0|| r_te>=100 || r_te<0){
-            Toast.makeText(loan_payment_calculate.this,"Enter valid number",Toast.LENGTH_SHORT).show();
+        if(ye_r>50 || ye_r<0){
+            Toast.makeText(loan_payment_calculate.this,"year's can't be more than 50",Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if( r_te>100 || r_te<0){
+            Toast.makeText(loan_payment_calculate.this,"Interest rate can't be more than 100",Toast.LENGTH_SHORT).show();
             return;
         }
 

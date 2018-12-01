@@ -19,7 +19,7 @@ public class squareRoot extends AppCompatActivity {
 
         n1= (EditText) findViewById(R.id.number);
         ans= (EditText) findViewById(R.id.answer);
-        result1=(Button) findViewById(R.id.resultArthmetic);
+        result1=(Button) findViewById(R.id.inputText);
 
         result1.setOnClickListener(new View.OnClickListener() {
             @Override

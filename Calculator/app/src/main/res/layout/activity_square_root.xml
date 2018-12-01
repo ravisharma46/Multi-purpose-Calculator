@@ -55,8 +55,8 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/resultArthmetic"
-        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/inputText"
+        android:background="@drawable/button"
         android:layout_width="110dp"
         android:layout_height="54dp"
         android:layout_marginTop="16dp"
