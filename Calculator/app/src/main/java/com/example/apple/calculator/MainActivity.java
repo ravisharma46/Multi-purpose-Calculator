@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         sqrt_root= (Button) findViewById(R.id.button1);
         arth_operation= (Button) findViewById(R.id.button2);
         button3= (Button) findViewById(R.id.button3);
